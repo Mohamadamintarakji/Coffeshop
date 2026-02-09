@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  margin-bottom: 40px;
+
+  .container {
+    width: 1269px;
+    max-width: 90%;
+    padding-top: clamp(24px, 5vw, 40px);
+
+    nav {
+      display: flex;
+      gap: 33px;
+      a {
+        color: #83888f;
+        font-family: Barlow;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.92px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#section1 {
+  div {
+    height: 584px;
+    background-image: url(./materials/Hero\ Image.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 80px;
+    border-radius: 10px;
+    main {
+      width: clamp(295px, 420px, 493px);
+      height: clamp(314px, 312px, 360px);
+
+      color: #fefcf7;
+      h1 {
+        width: 493px;
+        height: 145px;
+        font-family: Fraunces;
+        font-weight: 900;
+        font-style: Black;
+        font-size: 72px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+      p {
+        width: 493px;
+        height: 78px;
+        font-family: Barlow;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0px;
+      }
+      button {
+        width: 218px;
+        height: 57px;
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        border: none;
+        border-radius: 6px;
+        color: #fefcf7;
+        font-family: Barlow;
+        background: var(--colors-teal-600, #0e8784);
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  #section1 {
+    div {
+      background-image: url(./materials/tablet.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position: 10%;
+      max-width: 90%;
+      height: 506px;
+      padding-top: 24px;
+      padding-right: 24px;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      border-radius: 10px;
+
+      main {
+        width: 100%;
+        height: 314px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        h1 {
+          width: 295px;
+          height: 81px;
+          font-family: Fraunces;
+          font-weight: 900;
+          font-style: Black;
+          font-size: 40px;
+          line-height: 100%;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+        p {
+          width: 295px;
+          height: 104px;
+          font-family: Barlow;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 16px;
+          line-height: 160%;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+        button {
+          width: 218px;
+          height: 57px;
+          padding-top: 12px;
+          padding-right: 12px;
+          padding-bottom: 12px;
+          padding-left: 12px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #section1 {
+    div {
+      background-image: url(./materials/Hero\ Image.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 504px;
+      padding-top: 12px;
+      padding-right: 12px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+      border-radius: 10px;
+
+      main {
+        width: 100%;
+        height: 314px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        h1 {
+          width: 420px;
+          height: 112px;
+          font-family: Fraunces;
+          font-weight: 900;
+          font-style: Black;
+          font-size: 56px;
+          line-height: 100%;
+          letter-spacing: 0px;
+        }
+        p {
+          width: 420px;
+          height: 78px;
+          font-family: Barlow;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 16px;
+          line-height: 160%;
+          letter-spacing: 0px;
+        }
+        button {
+          width: 218px;
+          height: 57px;
+          padding-top: 12px;
+          padding-right: 12px;
+          padding-bottom: 12px;
+          padding-left: 12px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+#section2 {
+  margin-top: 140px;
+  .container {
+    position: relative;
+
+    div {
+      position: absolute;
+      top: -20%;
+    }
+  }
+}
+#section3 {
+  .container {
+    div {
+      h1 {
+        font-family: Fraunces;
+        font-weight: 900;
+        font-style: Black;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        color: #333d4b;
+      }
+      p {
+        width: 253.5px;
+        height: 78px;
+        font-family: Barlow;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0px;
+        color: #333d4b;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  #section3 {
+  
+    .container {
+        width: 100%;
+    
+
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .img1 {
+          width: 253.5px;
+          height: 193px;
+        }
+      }
+    }
+  }
+}
