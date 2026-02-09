@@ -263,6 +263,7 @@ header {
 }
 @media screen and (max-width: 1200px) {
   #section3{
+    background-color: red;
     .container{
       width: 100%;
       display: flex;
